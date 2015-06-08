@@ -1,30 +1,36 @@
-27-28/03/2015
-I tried test by test and it was working fine. Then suddenly my 2nd test, the times one stopped working.
-I know why and what happens but couldn't correct it with my actual ruby language knowledge.
-
-
-Inject Challenge (Rubyist Badge)
+The Inject challenge
 ================
+This is an exercise for Makers Academy, during week 2. The aim was to rebuilding the Ruby Inject Method.
 
-Instructions
--------
+Objectives of exercise
+----
+Getting a deeper understanding of Ruby methods and blocks.
 
-* Challenge time: Friday, the entire day + the weekend if you need it
-* Feel free to use google, your notes, books, etc but work on your own
-* You must submit a pull request to this repo with your challenge solution by 9am Monday morning
+Technologies used
+----
+- Ruby
+- rspec
 
-Task
------
+How to run it
+----
+```
+git clone git@github.com:GBouffard/inject-challenge.git
+cd inject-challenge
+require './lib/my_inject.rb'
+irb
+``` 
+you can now use my_inject the same way as inject works: 
+example: [1, 2, 3].my_inject(:+)
 
-* Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan
-* Fork this repo
-* run the command 'bundle' in the project directory to ensure you have all the gems
-* Reopen the Array class or subclass it.
-* Rewrite the inject method. Write a test for it first. Don't worry about returning an enumerator, assume a block is always given
-* Name your method differently (that is, not inject() or subclass Array) because rspec uses inject() internally, so the tests will fail with weird messages unless your implementation of inject is perfect.
-* If you would like a challenge, rewrite inject using two approaches: using iterators and using recursion but it’s not required to pass.
-* Submit pull request with your solution
+How to run tests
+----
+```
+cd Inject-Method
+rspec
+```
 
-
-[![Build Status](https://travis-ci.org/makersacademy/inject-challenge.svg?branch=master)](https://travis-ci.org/makersacademy/inject-challenge)
-[![Coverage Status](https://coveralls.io/repos/makersacademy/inject-challenge/badge.png)](https://coveralls.io/r/makersacademy/inject-challenge)
+Challenge status
+----
+27-28/03/2015
+I tried test by test and it was working fine. Then suddenly my 2nd test, the times one stopped working. I know why and what happens but couldn't correct it with my actual ruby language knowledge. Teachers said I did well for a 2nd week exercise and advised me to go back to the challenge later; once I will have more ruby knowledge, I should be able to solve.
+Need to finish challenge
